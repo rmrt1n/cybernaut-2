@@ -5,7 +5,7 @@
     { name: 'Dashboard', url: '#' },
     { name: 'Story', url: '#' },
     { name: 'Exercise', url: '/exercise' },
-    { name: 'Learn', url: '#' },
+    { name: 'Learn', url: '/learn' },
     { name: 'Settings', url: '#' },
   ];
 </script>

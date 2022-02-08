@@ -1,27 +1,24 @@
 <script context="module">
   import { supabase } from '$lib/db';
   export const load = async ({ params }) => {
-    const moduleId = params.slug;
+    const exerciseId = params.slug;
     // prettier-ignore
-    const { data: module } = await supabase
-      .from('modules')
+    const { data: exercise } = await supabase
+      .from('exercises')
       .select()
-      .eq('id', moduleId)
+      .eq('id', exerciseId)
       .single()
 
-    if (!module)
-      return {
-        status: 404,
-      };
+    if (!exercise) return { status: 404 };
 
     // prettier-ignore
     const { data: questions } = await supabase
       .from('questions')
       .select('*, choices(choice, is_correct)')
-      .eq('module_id', moduleId)
+      .eq('exercise_id', exerciseId)
 
     return {
-      props: { module, questions },
+      props: { exercise, questions },
     };
   };
 </script>
@@ -29,7 +26,7 @@
 <script>
   import ExerciseCard from '$lib/components/ExerciseCard.svelte';
 
-  export let module, questions;
+  export let exercise, questions;
 
   questions = questions.map((e) => ({
     ...e,
@@ -44,8 +41,8 @@
   $: correct = answers.filter((e) => e).length;
 </script>
 
-<h1 class="text-xl font-bold">{module.name}</h1>
-<p>{module.desc}</p>
+<h1 class="text-xl font-bold">{exercise.name}</h1>
+<p>{exercise.desc}</p>
 
 {#each questions as question, i}
   <ExerciseCard bind:question bind:answered bind:answers {i} />
