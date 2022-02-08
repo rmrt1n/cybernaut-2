@@ -10,7 +10,7 @@
 
 <div class="relative min-h-screen md:flex" class:dark={$theme === 'dark'}>
   <Sidebar bind:close />
-  <div class="w-full min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+  <div class="w-full min-h-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
     <Navbar bind:close bind:theme={$theme} />
     <div class="p-4">
       <slot />

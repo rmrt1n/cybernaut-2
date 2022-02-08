@@ -11,7 +11,7 @@
 </script>
 
 <div
-  class="bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 space-y-6 w-64 px-2 py-4 absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out z-20"
+  class="bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 space-y-6 w-64 px-2 py-4 absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out z-40"
   class:-translate-x-full={close}
 >
   <!-- logo -->

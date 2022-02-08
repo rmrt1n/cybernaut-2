@@ -12,7 +12,7 @@
 </script>
 
 <div
-  class="bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 flex items-center justify-between"
+  class="bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 flex items-center justify-between z-20 relative"
 >
   <div>
     <!-- hamburger -->
