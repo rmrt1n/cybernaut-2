@@ -42,7 +42,6 @@
 </script>
 
 <h1 class="text-xl font-bold">{exercise.name}</h1>
-<p>{exercise.desc}</p>
 
 {#each questions as question, i}
   <ExerciseCard bind:question bind:answered bind:answers {i} />

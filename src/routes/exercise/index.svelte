@@ -26,7 +26,6 @@
       </figure>
       <div class="card-body bg-white dark:bg-gray-800">
         <h2 class="card-title">{m.name}</h2>
-        <p>{m.desc || '...'}</p>
         <div class="justify-end card-actions">
           <a href={`/exercise/${m.id}`} class="btn btn-primary border-0">Play</a>
         </div>

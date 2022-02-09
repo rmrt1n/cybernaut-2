@@ -1,6 +1,6 @@
 -- modules
 insert into modules values ('4aa6727d-9e8b-4970-a450-eebfa414dcf6', 'Intro to Phishing'); 
-insert into modules (name) values ('Cybersecurity General Knowledge'); 
+insert into modules (name) values ('2cef987f-19a4-46b7-99ee-054ffc3ed60f', 'Cybersecurity General Knowledge'); 
 insert into modules (name) values ('Vishing 101'); 
 insert into modules (name) values ('History of Ransomware'); 
 
@@ -9,11 +9,18 @@ insert into modules (name) values ('History of Ransomware');
 -- src: https://www.ftc.gov/tips-advice/business-center/small-businesses/cybersecurity/quiz/phishing
 insert into questions (module_id, question)
 values
+-- src: https://www.ftc.gov/tips-advice/business-center/small-businesses/cybersecurity/quiz/phishing
   ('877111a1-1e62-4256-bf58-c4e9f404082d', '4aa6727d-9e8b-4970-a450-eebfa414dcf6', 'Which one of these statements is correct?'),
   ('cb4f186d-d3b7-430c-895b-f9d53267d582', '4aa6727d-9e8b-4970-a450-eebfa414dcf6', 'An email from your boss asks for the name, addresses, and credit card information of the company’s top clients. The email says it’s urgent and to please reply right away. You should reply right away. True or False?'),
   ('7f619d05-caff-4f94-b1e2-4462ff916b86', '4aa6727d-9e8b-4970-a450-eebfa414dcf6', 'You get a text message from a vendor who asks you to click on a link to renew your password so that you can log in to its website. You should:'),
   ('68a54a79-99a9-4d7d-b507-ff742d771eeb', '4aa6727d-9e8b-4970-a450-eebfa414dcf6', 'Email authentication can help protect against phishing attacks. True or False?'),
   ('9602ef64-13b8-48d3-b227-2c13c62cf0cb', '4aa6727d-9e8b-4970-a450-eebfa414dcf6', 'If you fall for a phishing scam, what should you do to limit the damage?');
+-- https://www.ftc.gov/tips-advice/business-center/small-businesses/cybersecurity/quiz/basics
+  ('', '2cef987f-19a4-46b7-99ee-054ffc3ed60f', 'Which of the following should you do to restrict access to your files and devices?'),
+  ('', '2cef987f-19a4-46b7-99ee-054ffc3ed60f', 'Backing up important files offline, on an external hard drive or in the cloud, will help protect your business in the event of a cyber attack. True or False?'),
+  ('', '2cef987f-19a4-46b7-99ee-054ffc3ed60f', 'Which is the best answer for which people in a business should be responsible for cybersecurity?'),
+  ('', '2cef987f-19a4-46b7-99ee-054ffc3ed60f', 'Cyber criminals only target large companies. True or False?'),
+  ('', '2cef987f-19a4-46b7-99ee-054ffc3ed60f', 'Which of the following is the best answer for how to secure your router?');
 
 -- choices
 insert into choices (question_id, choice, is_correct)
@@ -35,7 +42,29 @@ values
 
   ('9602ef64-13b8-48d3-b227-2c13c62cf0cb', 'Delete the phishing email.', false),
   ('9602ef64-13b8-48d3-b227-2c13c62cf0cb', 'Unplug the computer. This will get rid of any malware.', false),
-  ('9602ef64-13b8-48d3-b227-2c13c62cf0cb', 'Change any compromised passwords.', true);
+  ('9602ef64-13b8-48d3-b227-2c13c62cf0cb', 'Change any compromised passwords.', true),
+
+
+  ('0c8fb537-e258-4f46-8544-9a97c6058844', 'Update your software once a year.', false),
+  ('0c8fb537-e258-4f46-8544-9a97c6058844', 'Share passwords only with colleagues you trust.', false),
+  ('0c8fb537-e258-4f46-8544-9a97c6058844', 'Have your staff members access information via an open Wi-Fi network.', false),
+  ('0c8fb537-e258-4f46-8544-9a97c6058844', '', true),
+
+  ('fb4b27f5-e7d6-4247-a140-17adb51dcd00', 'True', true),
+  ('fb4b27f5-e7d6-4247-a140-17adb51dcd00', 'False', false),
+   
+  ('b938b038-adfe-4db9-ba04-2c4a7e5cc160', 'Business owners. They run the business, so they need to know cybersecurity basics and put them in practice to reduce the risk of cyber attacks.', false),
+  ('b938b038-adfe-4db9-ba04-2c4a7e5cc160', 'IT specialists, because they are in the best position to know about and promote cybersecurity within a business.', false),
+  ('b938b038-adfe-4db9-ba04-2c4a7e5cc160', 'Managers, because they are responsible for making sure that staff members are following the right practices.', false),
+  ('b938b038-adfe-4db9-ba04-2c4a7e5cc160', 'All staff members should know some cybersecurity basics to reduce the risk of cyber attacks.', true),
+
+  ('3d2c9873-49f3-4140-a121-b0f6f355b454', 'True', false),
+  ('3d2c9873-49f3-4140-a121-b0f6f355b454', 'False', false),
+
+  ('b6a883ce-12b7-4039-913c-6aaf1d8678af', 'Change the default name and password of the router.', false),
+  ('b6a883ce-12b7-4039-913c-6aaf1d8678af', 'Turn off the router’s remote management.', false),
+  ('b6a883ce-12b7-4039-913c-6aaf1d8678af', 'Log out as the administrator once the router is set up.', false),
+  ('b6a883ce-12b7-4039-913c-6aaf1d8678af', 'All of the above.', true);
 
 insert into tags
 values 
