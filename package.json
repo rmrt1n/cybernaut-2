@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^1.30.0",
+    "cookie": "^0.4.2",
     "marked": "^4.0.12"
   }
 }

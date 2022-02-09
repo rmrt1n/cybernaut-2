@@ -17,7 +17,7 @@
 
 <script>
   import { marked } from 'marked';
-  import { renderer } from '$lib/renderer';
+  import { renderer } from '$lib/utils/renderer';
 
   marked.use({ renderer });
 

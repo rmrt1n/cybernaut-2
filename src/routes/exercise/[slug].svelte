@@ -51,8 +51,6 @@
 {#if answered}
   <div class="mt-8">
     <h2 class="text-lg font-bold mb-2">Your results: {correct}</h2>
-    <a href="/exercise" class="btn bg-green-300 border-0 hover:bg-green-400 text-gray-800"
-      >Try another exercise</a
-    >
+    <a href="/exercise" class="btn btn-primary border-0">Try another exercise</a>
   </div>
 {/if}

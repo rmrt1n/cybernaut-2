@@ -28,10 +28,7 @@
         <h2 class="card-title">{m.name}</h2>
         <p>{m.desc || '...'}</p>
         <div class="justify-end card-actions">
-          <a
-            href={`/exercise/${m.id}`}
-            class="btn bg-green-300 border-0 hover:bg-green-400 text-gray-800">Play</a
-          >
+          <a href={`/exercise/${m.id}`} class="btn btn-primary border-0">Play</a>
         </div>
       </div>
     </div>

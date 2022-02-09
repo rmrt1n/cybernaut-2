@@ -1,12 +1,17 @@
 <script>
+  import Home from './icons/Home.svelte';
+  import Document from './icons/Document.svelte';
+  import Settings from './icons/Settings.svelte';
+  import Academy from './icons/Academy.svelte';
+  import Beaker from './icons/Beaker.svelte';
   export let close;
 
   const sections = [
-    { name: 'Dashboard', url: '#' },
-    { name: 'Story', url: '#' },
-    { name: 'Exercise', url: '/exercise' },
-    { name: 'Learn', url: '/learn' },
-    { name: 'Settings', url: '#' },
+    { name: 'Dashboard', url: '/', icon: Home },
+    { name: 'Story', url: '/story', icon: Academy },
+    { name: 'Exercise', url: '/exercise', icon: Beaker },
+    { name: 'Learn', url: '/learn', icon: Document },
+    { name: 'Settings', url: 'settings', icon: Settings },
   ];
 </script>
 
@@ -22,9 +27,11 @@
     {#each sections as sect}
       <a
         href={sect.url}
-        class="block px-4 py-2 font-medium hover:bg-green-300 dark:hover:text-gray-800 rounded transition duration-200"
+        class="block px-4 py-2 font-medium hover:bg-green-300 dark:hover:text-gray-800 rounded transition duration-200 flex items-center"
+        on:click={() => (close = true)}
       >
-        {sect.name}
+        <svelte:component this={sect.icon} />
+        <p class="ml-2">{sect.name}</p>
       </a>
     {/each}
   </nav>

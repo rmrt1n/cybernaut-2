@@ -4,17 +4,21 @@
   import Sun from './icons/Sun.svelte';
   import Moon from './icons/Moon.svelte';
 
-  export let close, theme;
+  export let close, theme, isProfileOpen;
 
   const changeTheme = () => {
     theme = theme === 'light' ? 'dark' : 'light';
+  };
+
+  const toggleProfile = () => {
+    isProfileOpen = !isProfileOpen;
   };
 </script>
 
 <div
   class="bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 flex items-center justify-between z-20 relative"
 >
-  <div>
+  <div class="flex items-center">
     <!-- hamburger -->
     <button
       class="p-3 hover:bg-gray-300 focus:bg-gray-300 md:hidden rounded"
@@ -41,7 +45,10 @@
     </button>
 
     <!-- profile -->
-    <button class="p-3 hover:bg-green-300 hover:text-gray-800 rounded transition duration-200">
+    <button
+      class="p-3 hover:bg-green-300 hover:text-gray-800 rounded transition duration-200"
+      on:click={toggleProfile}
+    >
       <Profile />
     </button>
   </div>

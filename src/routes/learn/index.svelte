@@ -16,7 +16,7 @@
 
 <script>
   import { marked } from 'marked';
-  import { renderer } from '$lib/renderer';
+  import { renderer } from '$lib/utils/renderer';
 
   marked.use({ renderer });
 
@@ -28,13 +28,27 @@
   });
 
   const tagsCountArr = Object.keys(tagsCount).map((e) => ({ tag: e, count: tagsCount[e] }));
+
+  let shownArticles = articles;
+  let selectedTags = [];
+
+  const toggleTag = (tag) => {
+    selectedTags = !selectedTags.includes(tag)
+      ? [...selectedTags, tag]
+      : selectedTags.filter((e) => e !== tag);
+  };
+
+  $: shownArticles = articles.filter((e) => {
+    if (selectedTags.length === 0) return true;
+    return e.tags.filter((f) => selectedTags.includes(f)).length === selectedTags.length;
+  });
 </script>
 
-<div class="lg:grid lg:grid-cols-5 gap-8">
-  <div class="col-span-3">
+<div class="lg:grid lg:grid-cols-8 gap-8">
+  <div class="col-span-5">
     <h1 class="text-xl font-bold mb-4">Learn</h1>
 
-    {#each articles as a}
+    {#each shownArticles as a}
       <a href={`/learn/${a.id}`} class="cursor-pointer">
         <div class="card mb-8">
           <div class="card-body bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700">
@@ -61,12 +75,20 @@
       </a>
     {/each}
   </div>
-  <div class="card hidden lg:block col-span-2 mt-10">
+
+  <div class="card hidden lg:block col-span-3 mt-10">
     <div class="card-body bg-white dark:bg-gray-800">
-      <h2 class="card-title">Tags</h2>
+      <h2 class="card-title">Filter by tags</h2>
       {#each tagsCountArr as t}
-        <p>{t.tag + ' '}({t.count})</p>
-        <p />{/each}
+        <div class="flex mb-2">
+          <input
+            type="checkbox"
+            class="checkbox mr-2 dark:border-gray-500"
+            on:click={() => toggleTag(t.tag)}
+          />
+          <p>{t.tag + ' '}({t.count})</p>
+        </div>
+      {/each}
     </div>
   </div>
 </div>

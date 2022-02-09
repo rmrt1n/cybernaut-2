@@ -4,7 +4,7 @@ scams were not commonly known by everyday people until nearly ten years later.
 
 That doesn’t mean that phishing was not a force to be reckoned with right from
 the start. In order to avoid falling prey to such scams yourself, it is helpful
-to have a basic understanding of the history behind them. 
+to have a basic understanding of the history behind them.
 
 ## Name Origins
 
@@ -24,7 +24,6 @@ and recorded was on January 2, 1996. The mention occurred in a Usenet newsgroup
 called AOHell. It is fitting that it was made there too; America Online is where
 the first rumblings of what would become a major criminal issue would take
 place.
-
 
 ## Phishing’s America Online Origins
 
@@ -61,7 +60,6 @@ phishers set up AIM accounts through the Internet; such accounts could not be
 warnings on its email and instant messenger clients to keep people from
 providing sensitive information through such methods.
 
-
 ## The Evolution of Phishing
 
 In many ways, phishing hasn’t changed a lot since its AOL heyday. In 2001,
@@ -90,7 +88,6 @@ In late 2008, Bitcoin and other cryptocurrencies are launched. This allows
 transactions using malicious software to be secure and anonymous, changing the
 game for cybercriminals.
 
-
 ## Phishing and Ransomware
 
 In September of 2013, Cryptolocker ransomware infected 250,000 personal
@@ -101,18 +98,16 @@ be a customer complaint and targeted businesses, the second had a malicious
 link with a message regarding a problem clearing a check and targeted the
 general public. Once clicked, Cryptolocker scrambles and locks files on the
 computer and demands the owner make a payment in exchange for the key to
-unlock and decrypt the files. 
-
+unlock and decrypt the files.
 
 ## Current Phishing Threats
 
-Phishers start adopting HTTPS more and more often on their sites starting in
-2017. When you click on a phishing link, the sites they lead to—that try to
+Phishers start adopting HTTPS more and more often on their sites starting in 2017. When you click on a phishing link, the sites they lead to—that try to
 trick you into entering credentials, personal information, and so
 on—implement web encryption at least 24 percent of the time. The green
 padlock gives consumers a false sense of security. All it really tells
 us is that traffic between the server and the user's browser is
-encrypted and protected against interception. 
+encrypted and protected against interception.
 
 A phishing campaign targeting organizations associated with the 2018
 Winter Olympics is the first to use a PowerShell tool called
@@ -129,7 +124,7 @@ Conversation hijacking, a style of phishing email in which hackers
 insert themselves into email conversations between parties known to
 and trusted by one another, starts being used. Once in, hackers
 exploit that trust to trick users to launch an executable. Variations
-of this scheme are very difficult to detect and beat. 
+of this scheme are very difficult to detect and beat.
 
 In 2018, researchers discover a new generation of phishing kit readily
 available on the Dark Web to cybercriminals. The kit enables anyone
@@ -168,13 +163,13 @@ invoices. Vendor email compromise impacted at least 500 organizations
 globally in 2019.
 
 According to Microsoft, some of the innovative ways they’ve seen
-phishing attacks evolve so far in 2020 include:  Pointing email links
+phishing attacks evolve so far in 2020 include: Pointing email links
 to fake Google search results that point to attacker-controlled
 malware-laden websites, pointing email links to non-existent pages on
 an attacker-controlled website so that a custom 404 page is presented
 that can be used to mimic logon pages for legitimate sites, spoofing
 company-specific Office 365 sign-in pages to look so realistic that
-users would think it's the real thing. 
+users would think it's the real thing.
 
 In early 2020, phishing emails related to the C-19 pandemic start
 running rampant. Popular themes include stimulus checks, fake CDC
@@ -187,4 +182,3 @@ facilitate endpoint infection or credential theft make it absolutely
 necessary for organizations to no longer consider their security
 solutions as their only line of defense. Users must become the last
 line of defense, playing a role in organizational security.
-
