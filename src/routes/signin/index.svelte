@@ -9,14 +9,14 @@
   const signIn = async () => {
     if (!email.toLowerCase().match(re)) return;
     // prettier-ignore
-    const { error } = await supabase.auth.signIn({ email }, { redirectTo: 'http://localhost:3000' })
+    const { error } = await supabase.auth.signIn({ email }, { redirectTo: 'http://localhost:3000/' })
     if (error) alert(error.message);
     msg = 'Check your Inbox';
   };
 </script>
 
-<div class="hero min-h-screen bg-base-200">
-  <div class="flex-col justify-center hero-content lg:flex-row">
+<div class="min-h-screen flex justify-center items-center p-10">
+  <div class="flex flex-col lg:flex-row justify-center items-center space-x-4 space-y-4">
     <div class="text-center lg:text-left md:w-1/2">
       <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
       <p class="mb-5">
@@ -25,7 +25,7 @@
         is over.
       </p>
     </div>
-    <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+    <div class="card flex-shrink-0 w-full max-w-sm shadow-xl">
       <form class="card-body" on:submit|preventDefault={signIn}>
         <div class="form-control">
           <label class="label">

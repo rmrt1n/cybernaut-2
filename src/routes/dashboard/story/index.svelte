@@ -14,6 +14,13 @@
 
 <script>
   /* export let stories; */
+  import Tutorial from '$lib/stories/tutorial/Tutorial.svelte';
 </script>
 
 <h1 class="text-xl font-bold mb-4">Story</h1>
+
+<div class="flex justify-center">
+  <div class="card bg-white w-3/4">
+    <Tutorial />
+  </div>
+</div>

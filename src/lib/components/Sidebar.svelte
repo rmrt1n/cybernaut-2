@@ -7,11 +7,11 @@
   export let close;
 
   const sections = [
-    { name: 'Dashboard', url: '/', icon: Home },
-    { name: 'Story', url: '/story', icon: Academy },
-    { name: 'Exercise', url: '/exercise', icon: Beaker },
-    { name: 'Learn', url: '/learn', icon: Document },
-    { name: 'Settings', url: 'settings', icon: Settings },
+    { name: 'Dashboard', url: '/dashboard', icon: Home },
+    { name: 'Story', url: '/dashboard/story', icon: Academy },
+    { name: 'Exercise', url: '/dashboard/exercise', icon: Beaker },
+    { name: 'Learn', url: '/dashboard/learn', icon: Document },
+    { name: 'Settings', url: '/dashboard/settings', icon: Settings },
   ];
 </script>
 
