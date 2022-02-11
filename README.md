@@ -1,6 +1,6 @@
 # Cybernaut
 
-2nd version of Cybernaut, rewritten in svelte. 
+2nd version of Cybernaut, rewritten in svelte.
 
 ## Developing
 

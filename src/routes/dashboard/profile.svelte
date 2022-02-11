@@ -26,7 +26,7 @@
         <div class="badge mx-2 badge-secondary">NEW</div>
       </h2>
 
-      <p>Here are your recent stas on these topics.</p>
+      <p>Here are your recent stats on these topics.</p>
 
       <div class="space-y-2 mt-4">
         <p class="font-bold">Phishing</p>

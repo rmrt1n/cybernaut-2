@@ -7,6 +7,7 @@
         class="flex items-center text-gray-800 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
         href="#"
       >
+        <img src="/logo.png" alt="logo" class="h-20 mr-4" />
         Cybernaut
       </a>
 

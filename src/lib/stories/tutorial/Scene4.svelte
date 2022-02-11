@@ -3,13 +3,17 @@
 
   const question = 'What should Phil do to stay safe while using public wifi? ';
   const choices = [
-    { text: 'Do nothing', isCorrect: false, msg: 'Doing nothing is stupid' },
+    { text: 'Do nothing', isCorrect: false, msg: 'Wrong! Doing nothing is stupid.' },
     {
       text: 'Connect to a VPN',
       isCorrect: true,
       msg: 'Correct! A VPN encrypts your network traffic, protecting you from prying hackers.',
     },
-    { text: 'Turn on airplane mode', isCorrect: false, msg: 'Then how would he check is mail?' },
+    {
+      text: 'Turn on airplane mode',
+      isCorrect: false,
+      msg: 'Wrong! Sure this would protect him but how can he do his work?',
+    },
   ];
 
   const answer = (choice) => {

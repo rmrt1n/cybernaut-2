@@ -1,9 +1,13 @@
 <script>
   export let cur, lose, msg;
-  console.log(lose);
+
+  const onClick = () => {
+    console.log(lose);
+    cur = lose ? cur : cur + 1;
+  };
 </script>
 
-<div class="relative" on:click={() => cur++}>
+<div class="relative" on:click={onClick}>
   <!-- background -->
   <img src={`/stories/tutorial/${lose ? 'black' : 'cafe'}.jpg`} />
 
