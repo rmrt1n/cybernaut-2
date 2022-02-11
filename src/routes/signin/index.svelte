@@ -8,8 +8,9 @@
 
   const signIn = async () => {
     if (!email.toLowerCase().match(re)) return;
+    const url = import.meta.env.VITE_URL ?? 'localhost:3000/dashboard';
     // prettier-ignore
-    const { error } = await supabase.auth.signIn({ email }, { redirectTo: 'http://localhost:3000/' })
+    const { error } = await supabase.auth.signIn({ email }, { redirectTo: url })
     if (error) alert(error.message);
     msg = 'Check your Inbox';
   };

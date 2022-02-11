@@ -1,7 +1,7 @@
 <script context="module">
   export const load = async ({ session }) => {
     const { authenticated } = session;
-    return authenticated ? {} : {};
+    return authenticated ? { status: 302, redirect: '/signin' } : {};
   };
 </script>
 
