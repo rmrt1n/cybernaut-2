@@ -49,7 +49,7 @@
     <h1 class="text-xl font-bold mb-4">Learn</h1>
 
     {#each shownArticles as a}
-      <a href={`/learn/${a.id}`} class="cursor-pointer">
+      <a href={`/dashboard/learn/${a.id}`} class="cursor-pointer">
         <div class="card mb-8">
           <div class="card-body bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700">
             <h2 class="card-title text-3xl">
